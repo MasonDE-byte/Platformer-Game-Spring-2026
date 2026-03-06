@@ -1,7 +1,8 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
-    {"name":"spr_background","order":9,"path":"sprites/spr_background/spr_background.yy",},
+    {"name":"obj_invisible_wall","order":1,"path":"objects/obj_invisible_wall/obj_invisible_wall.yy",},
+    {"name":"spr_background","order":10,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_clouds","order":8,"path":"sprites/spr_clouds/spr_clouds.yy",},
     {"name":"spr_grain","order":7,"path":"sprites/spr_grain/spr_grain.yy",},
     {"name":"spr_invisible_wall","order":6,"path":"sprites/spr_invisible_wall/spr_invisible_wall.yy",},
