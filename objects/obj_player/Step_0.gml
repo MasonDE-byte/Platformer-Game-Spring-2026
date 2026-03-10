@@ -39,7 +39,7 @@ if (place_meeting(x,y+vsp,obj_invisible_wall))
 }
 y = y + vsp;
 
-//Animations at 16:04 in the 2nd video with an animation glitch
+//Animations
 if (!place_meeting(x,y+1,obj_invisible_wall))
 {
 	sprite_index = spr_playerA;
@@ -55,7 +55,7 @@ else
 	}
 	else
 	{
-		sprite_index = spr_playerR
+		sprite_index = spr_playerR;
 	}
 }
 
