@@ -1,3 +1,4 @@
 /// @desc Restarting When Falling
 
-game_restart()
+x = 240;
+y = -64;
