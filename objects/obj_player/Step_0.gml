@@ -31,10 +31,18 @@ x = x + hsp;
 //Vertical collision
 if (place_meeting(x, y + vsp, obj_invisible_wall))
 {
-    if (vsp > 0) 
+    if (vsp > 1) 
     {
-        effect_create_depth(real,ef_smoke, x, y + 50, 1, c_white);
-    }
+        effect_create_depth(real,ef_smoke, x, y + 50, .999, c_lime);
+	}
+	if (vsp > 10)
+	{
+		effect_create_depth(real,ef_smoke, x, y + 50, 1, c_lime);
+	}
+	if (vsp > 15)
+	{
+		effect_create_depth(real,ef_smoke, x, y + 50, 1.01, c_lime);
+	}
     while (!place_meeting(x, y + sign(vsp), obj_invisible_wall))
     {
         y = y + sign(vsp);
@@ -42,7 +50,6 @@ if (place_meeting(x, y + vsp, obj_invisible_wall))
     vsp = 0;
 }
 y = y + vsp;
-
 
 //Animations
 if (!place_meeting(x,y+1,obj_invisible_wall))
