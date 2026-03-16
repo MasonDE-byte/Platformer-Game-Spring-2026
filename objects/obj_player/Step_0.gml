@@ -1,9 +1,9 @@
 /// @desc Core Player Logic
 
 //Get player inputs
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
-key_jump = keyboard_check_pressed(vk_up);
+key_left = keyboard_check(ord("A"));
+key_right = keyboard_check(ord("D"));
+key_jump = keyboard_check_pressed(ord("W"));
 
 //Calculate movement
 var _move = key_right - key_left;
@@ -29,13 +29,17 @@ if (place_meeting(x+hsp,y,obj_invisible_wall))
 x = x + hsp;
 
 //Vertical collision
-if (place_meeting(x,y+vsp,obj_invisible_wall))
+if (place_meeting(x, y + vsp, obj_invisible_wall))
 {
-	while (!place_meeting(x,y+sign(vsp),obj_invisible_wall))
-	{
-		y = y + sign(vsp);
-	}
-	vsp = 0;
+    if (vsp > 0) 
+    {
+        effect_create_depth(real,ef_smoke, x, y + 50, 1, c_white);
+    }
+    while (!place_meeting(x, y + sign(vsp), obj_invisible_wall))
+    {
+        y = y + sign(vsp);
+    }
+    vsp = 0;
 }
 y = y + vsp;
 
