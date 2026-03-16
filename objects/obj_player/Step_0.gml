@@ -3,7 +3,7 @@
 //Get player inputs
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
-key_jump = keyboard_check_pressed(vk_space);
+key_jump = keyboard_check_pressed(vk_up);
 
 //Calculate movement
 var _move = key_right - key_left;
@@ -38,6 +38,7 @@ if (place_meeting(x,y+vsp,obj_invisible_wall))
 	vsp = 0;
 }
 y = y + vsp;
+
 
 //Animations
 if (!place_meeting(x,y+1,obj_invisible_wall))
