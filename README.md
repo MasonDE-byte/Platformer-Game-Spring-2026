@@ -3,6 +3,7 @@
 * Looping through the bottom and sides of the romm when left
 * Effect size when landing depends on the speed of the player while falling
 * Music when room starts
+* Added max fall speed
 * New tileset design
 * New layout of stepping blocks
 * New background
