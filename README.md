@@ -1,4 +1,4 @@
-# GML-Platformer-Starter-Kit
+# GML-Platformer-Spring-2026
 
 * Looping through the bottom and sides of the romm when left
 * Effect size when landing depends on the speed of the player while falling
